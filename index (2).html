@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RosCare Medical Training</title>
+  <meta name="description" content="RosCare Medical Training - 3 certificados en 4 semanas. Landing gratuita con GitHub Pages, Google Forms y contacto por WhatsApp." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#f5f9fe;--surface:#fff;--surface2:#e9f1fb;--blue:#17479b;--blue2:#0f377b;--green:#66c545;--green2:#4cad30;--text:#1f2f4d;--muted:#63738a;--border:rgba(23,71,155,.12);--shadow:0 18px 48px rgba(15,55,123,.12);--fontDisplay:'Montserrat',sans-serif;--fontBody:'Inter',sans-serif;--textXl:clamp(2rem,1.4rem + 1.8vw,3.3rem);--textHero:clamp(2.8rem,1.5rem + 3.8vw,5.4rem)}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;font-family:var(--fontBody);background:linear-gradient(180deg,#f8fbff 0%,#eef5fd 100%);color:var(--text)} img{display:block;max-width:100%;height:auto} a{text-decoration:none;color:inherit} .container{width:min(1180px,calc(100% - 32px));margin:0 auto}
+    .topbar,.hero,.grid2,.cards,.footer-grid{display:flex}.topbar{background:var(--blue2);color:#fff}.topbar .container{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:10px 0}.nav{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--border)}.nav .container{display:flex;justify-content:space-between;align-items:center;gap:18px;padding:16px 0}.logo img{width:182px}.nav-links{display:flex;gap:20px;font-weight:700;color:#3d5578}.btn,.wa-float,.chat-toggle{transition:.2s ease all}.btn{background:var(--green);color:#fff;padding:15px 24px;border-radius:14px;font-weight:800;display:inline-flex;align-items:center;gap:10px;box-shadow:var(--shadow)}.btn:hover,.wa-float:hover{transform:translateY(-2px);background:var(--green2)}
+    section{padding:72px 0}.hero-wrap{padding:34px 0 26px}.hero{gap:40px;align-items:center}.hero-copy,.hero-media{flex:1}.eyebrow,.kicker{color:var(--green2);text-transform:uppercase;font-weight:800;letter-spacing:.02em;margin-bottom:12px}h1,h2,h3{font-family:var(--fontDisplay);color:var(--blue);margin:0}h1{font-size:var(--textHero);line-height:.96;max-width:11ch}h2{font-size:var(--textXl);line-height:1.04;margin-bottom:14px}.lead{font-size:clamp(1.05rem,1rem + .35vw,1.3rem);color:#566884;line-height:1.7;max-width:60ch}.hero-actions,.badge-row,.contact-points{display:flex;gap:14px;flex-wrap:wrap;margin-top:24px}.badge-row span,.mini{background:rgba(255,255,255,.86);border:1px solid var(--border);padding:12px 15px;border-radius:999px;font-weight:700;color:#436180}.hero-card{position:relative;background:linear-gradient(135deg,#0f377b 0%,#17479b 60%,#2a68d0 100%);padding:18px;border-radius:30px;box-shadow:var(--shadow);overflow:hidden}.hero-main{width:100%;border-radius:22px;aspect-ratio:4/4.7;object-fit:cover}.logo-chip{position:absolute;left:18px;top:18px;background:rgba(255,255,255,.96);border-radius:16px;padding:10px 12px;box-shadow:var(--shadow)}.logo-chip img{width:130px}.hero-note{position:absolute;left:-6px;bottom:26px;background:#fff;border-radius:18px;padding:16px 18px;box-shadow:var(--shadow);max-width:260px}.stats{display:flex;gap:18px;flex-wrap:wrap;margin-top:26px}.mini{border-radius:18px;padding:18px;background:#fff;min-width:180px}.section-head{text-align:center;max-width:820px;margin:0 auto 34px}.cards{gap:24px;flex-wrap:wrap}.program,.benefit,.testimonial,.form-card,.about-card,.gallery-card{background:rgba(255,255,255,.96);border:1px solid var(--border);border-radius:24px;box-shadow:0 12px 32px rgba(23,71,155,.06)}.program{flex:1 1 300px;overflow:hidden}.program img{width:100%;aspect-ratio:16/10;object-fit:cover}.program-body{padding:24px}.tag{display:inline-block;padding:8px 12px;border-radius:999px;background:var(--blue);color:#fff;font-size:.86rem;font-weight:800;margin-bottom:14px}.program-body p,.benefit p,.about-copy p,.testimonial p,.form-copy p{color:#566884;line-height:1.7}ul.clean{list-style:none;padding:0;margin:16px 0 0;display:grid;gap:10px}ul.clean li::before{content:'✓';color:var(--green2);font-weight:900;margin-right:10px}.benefits{background:linear-gradient(135deg,#143f8f 0%,#10397d 100%)}.benefits .section-head h2,.benefits .section-head p,.benefit h3,.benefit p{color:#fff}.benefits .kicker{color:#90e672}.benefit{flex:1 1 220px;padding:28px;background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.08)}.grid2{gap:34px;align-items:center}.about-card img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:24px}.gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.gallery-card{overflow:hidden}.gallery-card img{width:100%;aspect-ratio:4/3;object-fit:cover}.gallery-card .cap{padding:16px 18px;font-weight:700;color:var(--blue)}.testimonials{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}.testimonial{padding:26px}.stars{color:#ffb400;letter-spacing:2px;margin-bottom:12px}.form-wrap{background:#eaf2fb}.form-card{padding:28px}.cta-band{background:linear-gradient(135deg,#133e8b 0%,#19489b 100%);color:#fff}.cta-band .container{display:flex;justify-content:space-between;align-items:center;gap:20px}.cta-band h2,.cta-band p{color:#fff}footer{background:#113a84;color:rgba(255,255,255,.92);padding:56px 0 26px}.footer-grid{gap:34px;justify-content:space-between}.footer-col{flex:1}.footer-col h3{color:#fff;margin-bottom:14px;font-size:1.2rem}.socials{display:flex;gap:12px;flex-wrap:wrap}.socials a{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:rgba(255,255,255,.1)}
+    .wa-float{position:fixed;left:16px;bottom:16px;z-index:45;background:#25D366;color:#fff;border-radius:999px;padding:14px 18px;display:inline-flex;align-items:center;gap:12px;font-weight:800;box-shadow:0 16px 36px rgba(37,211,102,.35)}.chat-toggle{position:fixed;right:18px;bottom:18px;width:62px;height:62px;border-radius:50%;background:#1580ff;color:#fff;border:none;display:grid;place-items:center;z-index:51;box-shadow:0 16px 36px rgba(21,128,255,.35);cursor:pointer}.chatbot{position:fixed;right:18px;bottom:92px;width:min(390px,calc(100vw - 24px));background:#fff;border-radius:24px;box-shadow:0 24px 60px rgba(20,63,143,.25);border:1px solid var(--border);overflow:hidden;z-index:50;display:none}.chatbot.open{display:block}.chat-head{background:linear-gradient(135deg,#143f8f 0%,#1d62d0 100%);color:#fff;padding:18px 20px}.chat-body{padding:16px;max-height:420px;overflow:auto;background:#f6faff}.bot,.user{max-width:86%;padding:12px 14px;border-radius:16px;margin-bottom:12px;line-height:1.5}.bot{background:#fff;border:1px solid var(--border);color:#33506f}.user{background:#dff1d7;margin-left:auto;color:#24542d}.quick{display:flex;gap:8px;flex-wrap:wrap;padding:0 16px 16px;background:#f6faff}.quick button{border:1px solid rgba(23,71,155,.14);background:#fff;color:var(--blue);border-radius:999px;padding:8px 12px;font-weight:700;cursor:pointer}.small{font-size:.92rem;color:#6a81a0}.highlight{color:var(--green)}
+    @media (max-width:1024px){.hero,.grid2,.footer-grid,.cta-band .container{flex-direction:column}.gallery-grid,.testimonials{grid-template-columns:1fr 1fr}.nav-links{display:none}}
+    @media (max-width:720px){section{padding:58px 0}.topbar .container{justify-content:center;text-align:center}.gallery-grid,.testimonials{grid-template-columns:1fr}.wa-float{left:10px;right:10px;justify-content:center}.chatbot{right:12px;bottom:88px}}
+  </style>
+</head>
+<body>
+  <a class="wa-float" href="https://wa.me/13473074653?text=Hola%20RosCare%2C%20quiero%20informaci%C3%B3n%20sobre%20los%203%20certificados%20en%204%20semanas" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp RosCare">
+    <span style="font-size:1.35rem;">💬</span>
+    <span>Escríbenos por WhatsApp<br><strong>+1 (347) 307-4653</strong></span>
+  </a>
+
+  <button class="chat-toggle" id="chatToggle" aria-label="Abrir asistente">!</button>
+  <aside class="chatbot" id="chatbot">
+    <div class="chat-head"><strong>Asistente RosCare</strong><br><span class="small" style="color:rgba(255,255,255,.88)">Versión gratuita con respuestas rápidas.</span></div>
+    <div class="chat-body" id="chatMessages"><div class="bot">Hola. Puedo ayudarte con duración, certificados, contacto y pasos para inscribirte.</div></div>
+    <div class="quick">
+      <button data-q="¿Cuánto dura el programa?">Duración</button>
+      <button data-q="¿Qué certificaciones incluye?">Certificados</button>
+      <button data-q="¿Cómo contacto a RosCare?">Contacto</button>
+    </div>
+  </aside>
+
+  <div class="topbar"><div class="container"><div>📞 +1 (347) 307-4653 &nbsp; | &nbsp; ✉️ roscaremedicaltraining@gmail.com</div><div>✅ 3 certificados en 4 semanas &nbsp; | &nbsp; Instagram: @roscaremedicaltraining</div></div></div>
+
+  <header class="nav">
+    <div class="container">
+      <a href="#inicio" class="logo"><img src="./assets/asistant-807-x-1108-px-1.jpg" alt="Logo RosCare Medical Training" width="182" height="70"></a>
+      <nav class="nav-links">
+        <a href="#programas">Marca RosCare</a>
+        <a href="#beneficios">Beneficios</a>
+        <a href="#instructora">Instructora</a>
+        <a href="#galeria">Galería</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <a href="#contacto" class="btn">Solicita información</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-wrap" id="inicio">
+      <div class="container hero">
+        <div class="hero-copy">
+          <div class="eyebrow">RosCare Medical Training</div>
+          <h1>Obtén tus <span class="highlight">3 certificados</span> en solo 4 semanas</h1>
+          <p class="lead">Esta versión quedó adaptada para funcionar solo con herramientas gratuitas: publicación en GitHub Pages, captación con Google Forms y almacenamiento en Google Sheets.</p>
+          <div class="hero-actions"><a class="btn" href="#contacto">Reservar cupo</a></div>
+          <div class="badge-row"><span>100% publicable gratis</span><span>Google Forms</span><span>GitHub Pages</span></div>
+          <div class="stats"><div class="mini"><strong>3 certificados</strong><br><span class="small">CAMC, FBT, EKG</span></div><div class="mini"><strong>4 semanas</strong><br><span class="small">Programa intensivo</span></div><div class="mini"><strong>Google Sheets</strong><br><span class="small">Registro gratis</span></div></div>
+        </div>
+        <div class="hero-media">
+          <div class="hero-card">
+            <div class="logo-chip"><img src="./assets/asistant-807-x-1108-px-1.jpg" alt="Logo RosCare" width="130" height="50"></div>
+            <img class="hero-main" src="./assets/cecy01.jpg" alt="Imagen principal de RosCare" width="768" height="1024">
+            <div class="hero-note"><strong style="color:var(--blue)">Versión gratuita lista</strong><div class="small">Sin integraciones de pago.</div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="programas">
+      <div class="container">
+        <div class="section-head"><div class="kicker">Oferta académica</div><h2>Los 3 certificados incluidos</h2><p class="lead" style="margin-inline:auto">La página conserva la parte visual y persuasiva, pero elimina cualquier dependencia de servicios pagos.</p></div>
+        <div class="cards">
+          <article class="program"><img src="./assets/cecy01.jpg" alt="Programa de Asistente Médico Clínico" width="1600" height="900" loading="lazy"><div class="program-body"><span class="tag">CAMC</span><h3>Asistente Médico Clínico</h3><p>Capacitación para tareas clínicas y administrativas con enfoque práctico.</p><ul class="clean"><li>Signos vitales</li><li>Asistencia clínica</li><li>Preparación del paciente</li></ul></div></article>
+          <article class="program"><img src="./assets/cecy01.jpg" alt="Programa de Flebotomía" width="1600" height="900" loading="lazy"><div class="program-body"><span class="tag">FBT</span><h3>Técnico en Flebotomía</h3><p>Extracción de sangre, manejo de muestras y bioseguridad.</p><ul class="clean"><li>Extracción de sangre</li><li>Manejo de muestras</li><li>Bioseguridad</li></ul></div></article>
+          <article class="program"><img src="./assets/cecy01.jpg" alt="Programa de Electrocardiograma" width="1600" height="900" loading="lazy"><div class="program-body"><span class="tag">EKG</span><h3>Técnico en Electrocardiograma</h3><p>Monitoreo cardíaco, electrodos y lectura básica de resultados.</p><ul class="clean"><li>Realización de EKG</li><li>Monitoreo cardíaco</li><li>Manejo de equipos</li></ul></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="benefits" id="beneficios">
+      <div class="container"><div class="section-head"><div class="kicker">Ventajas</div><h2>Qué sí queda funcionando gratis</h2><p class="lead" style="margin-inline:auto;color:rgba(255,255,255,.88)">Se mantienen hosting gratis, formulario gratis, Google Sheets gratis y correo mediante herramientas gratuitas con límites de uso.</p></div><div class="cards"><div class="benefit"><h3>GitHub Pages</h3><p>Hosting gratis para publicar la landing. [web:12][web:19]</p></div><div class="benefit"><h3>Google Forms</h3><p>Formulario gratuito con respuestas vinculables a Google Sheets. [web:59][web:63][web:68]</p></div><div class="benefit"><h3>Google Sheets</h3><p>Base de datos gratis para registrar prospectos enviados desde el formulario. [web:63][web:68]</p></div><div class="benefit"><h3>Correo gratis</h3><p>Apps Script puede enviar correos, pero con cuotas diarias limitadas en cuentas gratuitas. [web:58][web:60][web:64]</p></div></div></div>
+    </section>
+
+    <section id="instructora">
+      <div class="container grid2">
+        <div class="about-card"><img src="./assets/magnific_mejora-la-imagen-del-rost_cpD2uXd0eP.jpg" alt="Lcda. Cecilia Rosado" width="768" height="1024" loading="lazy"></div>
+        <div class="about-copy"><div class="kicker">Nuestra instructora</div><h2>Imagen profesional, plataforma gratuita</h2><p>Se conserva la presentación profesional de la instructora para reforzar confianza, sin añadir herramientas externas pagas.</p><ul class="clean"><li>Marca consistente.</li><li>Autoridad visual.</li><li>Mejor conexión con el visitante.</li></ul><div class="contact-points"><a class="btn" href="#contacto">Solicitar información</a></div></div>
+      </div>
+    </section>
+
+    <section id="galeria" style="background:#eef4fb;">
+      <div class="container"><div class="section-head"><div class="kicker">Recursos visuales</div><h2>Imagen institucional simplificada</h2></div><div class="gallery-grid"><article class="gallery-card"><img src="./assets/cecy01.jpg" alt="Imagen institucional del hero" width="1536" height="864" loading="lazy"><div class="cap">Imagen institucional</div></article><article class="gallery-card"><img src="./assets/cecy01.jpg" alt="Marca RosCare del sitio" width="1536" height="864" loading="lazy"><div class="cap">Marca RosCare</div></article><article class="gallery-card"><img src="./assets/cecy01.jpg" alt="Beneficios del sitio" width="1536" height="864" loading="lazy"><div class="cap">Beneficios</div></article><article class="gallery-card"><img src="./assets/magnific_mejora-la-imagen-del-rost_cpD2uXd0eP.jpg" alt="Sección de instructora" width="1536" height="864" loading="lazy"><div class="cap">Instructora</div></article><article class="gallery-card"><img src="./assets/cecy01.jpg" alt="Proceso del sitio" width="1536" height="864" loading="lazy"><div class="cap">Proceso</div></article><article class="gallery-card"><img src="./assets/cecy01.jpg" alt="Formulario del sitio" width="1536" height="864" loading="lazy"><div class="cap">Formulario</div></article></div></div>
+    </section>
+
+    <section id="contacto" class="form-wrap">
+      <div class="container grid2">
+        <div class="form-copy"><div class="kicker">Captación gratuita</div><h2>Formulario gratis con Google Forms</h2><p>Para mantener todo gratis, eliminé la automatización hacia WhatsApp porque normalmente requiere un servicio externo o API de pago. La versión gratuita recomienda recibir leads por Google Forms, guardarlos en Google Sheets y escribir manualmente al prospecto por WhatsApp. [web:42][web:46][web:59][web:63][web:68]</p><ul class="clean"><li>Respuestas gratis en Google Forms. [web:59][web:63]</li><li>Guardado automático en Google Sheets. [web:63][web:68]</li><li>Correo posible con Apps Script, sujeto a cuotas diarias. [web:58][web:60][web:64]</li></ul><div class="contact-points"><div><strong style="color:var(--blue)">📞 +1 (347) 307-4653</strong></div><div><strong style="color:var(--blue)">✉️ roscaremedicaltraining@gmail.com</strong></div></div></div>
+        <div class="form-card"><h3 style="font-size:1.8rem;color:var(--blue);margin-top:0">Reserva tu cupo</h3><p>Botón listo para enlazar a tu Google Form gratuito.</p><a class="btn" href="https://forms.google.com" target="_blank" rel="noopener noreferrer">Abrir Google Forms</a><p class="small" style="margin-top:16px">Cuando crees tu formulario, este botón se reemplaza por tu enlace real o por el formulario embebido. [web:59]</p></div>
+      </div>
+    </section>
+
+    <section id="testimonios">
+      <div class="container"><div class="section-head"><div class="kicker">Prueba social</div><h2>Historias de nuestros graduados</h2></div><div class="testimonials"><article class="testimonial"><div class="stars">★★★★★</div><p>“La información se entiende rápido y transmite mucha confianza.”</p><strong style="color:var(--blue)">Celia Rosado</strong></article><article class="testimonial"><div class="stars">★★★★★</div><p>“La propuesta se ve profesional y clara para captar estudiantes.”</p><strong style="color:var(--blue)">Ma Fernanda Barahona</strong></article><article class="testimonial"><div class="stars">★★★★★</div><p>“El acceso por WhatsApp ayuda a responder rápido después del formulario.”</p><strong style="color:var(--blue)">Kiara Reyes</strong></article></div></div>
+    </section>
+
+    <section class="cta-band"><div class="container"><div><h2>Versión 100% gratuita lista para publicar</h2><p>Se suprimió lo que normalmente implicaría pago, especialmente automatización avanzada a WhatsApp y dominio propio.</p></div><a class="btn" href="#contacto">Ver captación</a></div></section>
+  </main>
+
+  <footer><div class="container footer-grid"><div class="footer-col"><img src="./assets/asistant-807-x-1108-px-1.jpg" alt="RosCare Medical Training" width="180" height="70" style="background:#fff;border-radius:12px;padding:8px"><p>Landing profesional gratuita para publicar en GitHub Pages. [web:12][web:19]</p></div><div class="footer-col"><h3>Gratis incluido</h3><p>GitHub Pages. [web:12][web:19]</p><p>Google Forms. [web:59][web:63]</p><p>Google Sheets. [web:63][web:68]</p></div><div class="footer-col"><h3>No incluido</h3><p>Dominio propio gratis permanente. [web:12][web:19]</p><p>Automatización completa a WhatsApp gratis garantizada. [web:42][web:46]</p></div><div class="footer-col"><h3>Contacto</h3><p>📞 +1 (347) 307-4653</p><p>✉️ roscaremedicaltraining@gmail.com</p><p>📷 @roscaremedicaltraining</p><div class="socials"><a href="https://instagram.com/roscaremedicaltraining" target="_blank" rel="noopener noreferrer">IG</a><a href="https://wa.me/13473074653" target="_blank" rel="noopener noreferrer">WA</a></div></div></div></footer>
+
+  <script>
+    const chatToggle=document.getElementById('chatToggle'),chatbot=document.getElementById('chatbot'),chatMessages=document.getElementById('chatMessages');
+    const replies={
+      '¿cuánto dura el programa?':'El programa comunica 3 certificados en 4 semanas.',
+      '¿qué certificaciones incluye?':'Incluye Asistente Médico Clínico, Flebotomía y Electrocardiograma.',
+      '¿cómo contacto a roscare?':'Puedes llenar el formulario gratuito en Google Forms y luego continuar por WhatsApp al +1 (347) 307-4653.'
+    };
+    chatToggle.addEventListener('click',()=>chatbot.classList.toggle('open'));
+    document.querySelectorAll('[data-q]').forEach(btn=>btn.addEventListener('click',()=>{const q=btn.dataset.q;const user=document.createElement('div');user.className='user';user.textContent=q;chatMessages.appendChild(user);const bot=document.createElement('div');bot.className='bot';bot.textContent=replies[q.toLowerCase()]||'Gracias por tu pregunta.';chatMessages.appendChild(bot);chatMessages.scrollTop=chatMessages.scrollHeight;}));
+  </script>
+</body>
+</html>
